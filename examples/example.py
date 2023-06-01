@@ -7,11 +7,11 @@ from datetime import datetime
 load_dotenv()  # take environment variables from .env.
 USE_AUTH_TOKEN = os.getenv('USE_AUTH_TOKEN')
 
-yt_pod = Podder(link='https://www.youtube.com/watch?v=C762HWSz67w',
+yt_pod = Podder(link='YOUTUBE_LINK',
                name="podcast_name",
                auth_token=USE_AUTH_TOKEN,
                start_time=0,
-               end_time= 30)
+               end_time= 300)
 
 rslt = yt_pod.process_podcast()
 
