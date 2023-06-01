@@ -1,5 +1,5 @@
 # podder
-This is a script I wrote to download a podcast off youtube, break the podcast up by speaker, and analyze each speaker's emotion/sentiment with open-source language models.
+A python library that diarizes a youtube podcast and analyzes each speaker's emotion by processing both their speech and the transcription of what they said. 
 
 I leveraged the following models to accomplish this:
 
