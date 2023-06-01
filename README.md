@@ -54,25 +54,22 @@ Comparing execution time with my CPU vs GPU processing 5 minutes of a podcast wi
 > :warning: This is the install process on a Windows machine. Installation instructions will look different for Mac or Linux
 
 1. Install pytorch. I recommend going to https://pytorch.org/ to find the right install command for your device. For me, this was
-        
-        ```bash
+
         pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
-        ```
+
 > :warning: I encourage installing torch this way so you can leverage your GPU for inference (if you have one)
 2. Install develop branch of pyannote-audio. Latest pyannote-audio version at time of readme update (v2.1.1) does not support latest torch version (>=2.0.0), thus must use dev branch
-        
-        ```bash
+
         pip install -qq https://github.com/pyannote/pyannote-audio/archive/refs/heads/develop.zip
-        ```
+
 3. Install podder (eventually will get this up on pypi)
         
-        ```bash
         pip install https://github.com/VonSquiggles/podder/archive/refs/heads/main.zip
-        ```
+
 4. Install my fork of soxan (in my fork I took https://github.com/m3hrdadfi/soxan and formatted it as an installable package)
-        ```bash
+
         pip install https://github.com/VonSquiggles/soxan/archive/refs/tags/v0.1.0.tar.gz
-        ```
+
 5. Download https://github.com/yt-dlp/yt-dlp and add it to PATH so it can be called from anywhere on your device.
    1. This allows you to download youtube videos as .wav files onto your device.
    
