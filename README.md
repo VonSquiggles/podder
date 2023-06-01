@@ -14,11 +14,11 @@ Try it out with the first couple minutes of your favorite podcast!:
 ```python
 from podder import Podder
 
-podcast = PodcastSpeakers(link="YOUTUBE_PODCAST_LINK",
-                        name="PODCAST_NAME", # this is just what your .wav files will be named with
-                        auth_token="HUGGINGFACE_AUTH_TOKEN",
-                        start_time=0,
-                        end_time=120)
+podcast = Podder(link="YOUTUBE_PODCAST_LINK",
+                name="PODCAST_NAME", # this is just what your .wav files will be named with
+                auth_token="HUGGINGFACE_AUTH_TOKEN",
+                start_time=0,
+                end_time=120)
 
 pod_data = podcast.process_podcast()
 print(pod_data)
